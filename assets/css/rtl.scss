@@ -1,0 +1,52 @@
+html[dir="rtl"] {
+
+    body {
+        text-align: right;
+    }
+
+    select.form-control {
+        background-position: calc( 0px + 15px);
+    }
+
+    .form-group.input-with-start-icon .start-icon {
+        left: unset;
+        right: 0;
+    }
+
+    .form-group .country-code-container {
+
+        left: unset;
+        right: 0;
+    }
+
+    .custom-control-label::before {
+        left: unset;
+        right: -1.5rem;
+    }
+
+    .custom-control-label::after {
+        left: unset;
+        right: -1.5rem;
+    }
+
+    .custom-radio {
+        &.custom-radio-lg {
+
+            .custom-control-label::before {
+                left: unset;
+                right: -1.8rem;
+            }
+
+            .custom-control-input:checked~.custom-control-label::after {
+                left: -1.8rem;
+                right: -1.8rem;
+            }
+        }
+    }
+
+    .swiper-slider-wrapper.swiper-with-start-end-arrows .arrows-wrapper img,
+    .swiper-slider-wrapper.swiper-with-bottom-center-arrows .arrows-wrapper img,
+    .arrows-wrapper.custom-arrow img {
+        transform: rotate(180deg);
+    }
+}

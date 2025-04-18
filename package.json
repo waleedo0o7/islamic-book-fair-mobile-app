@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "jquery-circle-progress": "^1.2.2",
+    "sass": "^1.79.5",
+    "swiper": "^11.1.15"
+  }
+}

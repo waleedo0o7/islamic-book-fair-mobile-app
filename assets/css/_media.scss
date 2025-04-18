@@ -1,0 +1,70 @@
+// start from 1200px to and upper ( laptops and large monitors only )
+
+@media (min-width: 1800px) {
+    .container-start-padding {
+        padding-inline-start: 14%;
+    }
+}
+
+@media (max-width: 1800px) and (min-width: 1600px) {
+    .container-start-padding {
+        padding-inline-start: 11%;
+    }
+}
+
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+    .container-start-padding {
+        padding-inline-start: 5.5%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1400px;
+    }
+
+    .container-sm {
+        max-width: 820px;
+    }
+
+    .col-xl-w-20 {
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+    }
+
+}
+
+@media (min-width: 992px) {}
+
+// tablets and all mobiles
+@media (max-width: 992px) {}
+
+// large an small mobiles
+@media (max-width: 600px) {
+    .custom-tabs-wrapper {
+        .nav-tabs {
+            .nav-item {
+                .nav-link {
+                    padding: 0.5rem 0.6rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// small mobiles
+@media (max-width: 390px) {
+    .custom-tabs-wrapper {
+        .nav-tabs {
+            .nav-item {
+                .nav-link {
+                    padding: 0.5rem 0.4rem;
+                }
+            }
+        }
+    }
+}

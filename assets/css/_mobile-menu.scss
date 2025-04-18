@@ -1,0 +1,233 @@
+@media all and (min-width : 992px) {
+
+    .mobile-bar-wrapper,
+    .mobile-menu-wrapper {
+        display: none;
+    }
+}
+
+
+@media all and (max-width : 992px) {
+
+    .top-bar-wrapper {
+        display: none;
+    }
+
+
+    .mobile-bar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--color-primary);
+        padding: 10px;
+        flex-direction: row-reverse;
+        position: relative;
+
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgb(0 0 0 / 37%) 0%, rgba(0, 0, 0, 0) 100%);
+            z-index: 1;
+        }
+
+        * {
+            z-index: 2;
+        }
+
+        .open-menu-button {
+            font-size: 28px;
+            color: #FFF;
+
+        }
+
+        .mobile-logo-button {
+            display: block;
+
+            .mobile-logo-image {
+                height: 60px;
+            }
+        }
+    }
+
+    .mobile-menu-wrapper {
+        display: none;
+
+        .nav-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            height: calc(100% - 20px);
+            overflow: auto;
+        }
+
+
+        .close-menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: var(--color-primary);
+            font-size: 32px;
+            background: var(--color-secondary);
+            width: 62px;
+            height: 62px;
+            overflow: hidden;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .nav {
+            &-drill {
+                display: flex;
+                position: fixed;
+                z-index: 105;
+                top: 0;
+                right: 0;
+                width: 100%; // مثال لقيمة $nav-width
+                height: 100vh;
+                background-color: var(--color-primary); // مثال لقيمة $nav-background-color
+                overflow-y: auto;
+                overflow-x: hidden;
+                -webkit-overflow-scrolling: touch;
+                transition: 0.45s;
+            }
+
+            &-items {
+                flex: 0 0 100%;
+            }
+
+            &-item {
+                &:not(:last-child) {
+                    border-bottom: solid 1px #e1dada38;
+                }
+            }
+
+            &-link {
+                display: block;
+                padding: 15px; // مثال لقيمة $nav-padding
+                background-color: var(--color-primary); // نفس قيمة $nav-background-color
+                color: #FFF; // مثال لقيمة $primary-color
+                font-size: 22px;
+                line-height: 1.5em;
+                font-weight: 400;
+            }
+
+            &-expand {
+                &-content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform: translateX(100%);
+                    background-color: #e9ecef; // مثال لقيمة $nav-level-background-color
+                    transition: 0.3s;
+                    visibility: hidden;
+                    z-index: 99;
+
+                    .nav-item {
+                        &:not(:last-child) {
+                            border-bottom: solid 1px #e1dada38; // مثال لقيمة $nav-level-border-color
+                        }
+                    }
+
+                    .nav-link {
+                        background-color: #e9ecef; // نفس قيمة $nav-level-background-color
+                    }
+
+                    .nav-back-link {
+                        display: flex;
+                        align-items: center;
+                        background-color: var(--color-primary) !important; // نفس قيمة $primary-color
+                        color: #ffffff; // مثال لقيمة $white
+
+                        &::before {
+                            content: "\f054";
+                            -moz-osx-font-smoothing: grayscale;
+                            -webkit-font-smoothing: antialiased;
+                            display: inline-block;
+                            font-style: normal;
+                            font-variant: normal;
+                            line-height: 1;
+                            text-rendering: auto;
+                            font-family: "Font Awesome 6 Free";
+                            font-weight: 900;
+                            font-size: 18px;
+                            margin-inline-end: 5px;
+                            position: relative;
+                            margin-top: 9px;
+                        }
+                    }
+                }
+
+                &-link {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &::after {
+                        content: "\f053";
+                        -moz-osx-font-smoothing: grayscale;
+                        -webkit-font-smoothing: antialiased;
+                        font-style: normal;
+                        font-variant: normal;
+                        line-height: 1;
+                        text-rendering: auto;
+                        font-family: "Font Awesome 6 Free";
+                        font-weight: 900;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--color-secondary);
+                    }
+                }
+
+                &.active {
+                    >.nav-expand-content {
+                        transform: translateX(0);
+                        visibility: visible;
+                    }
+                }
+
+                .nav-expand-content {
+                    background-color: var(--color-primary-dark);
+
+                    .nav-link {
+                        background-color: var(--color-primary-dark);
+                    }
+
+                    .nav-expand-content {
+                        background-color: #dee2e6; // مثال لقيمة $nav-level3-background-color
+
+                        .nav-link {
+                            background-color: #dee2e6;
+                        }
+
+                        .nav-expand-content {
+                            background-color: #ced4da; // مثال لقيمة $nav-level4-background-color
+
+                            .nav-link {
+                                background-color: #ced4da;
+                            }
+
+                            .nav-expand-content {
+                                background-color: #adb5bd; // مثال لقيمة $nav-level5-background-color
+
+                                .nav-link {
+                                    background-color: #adb5bd;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
