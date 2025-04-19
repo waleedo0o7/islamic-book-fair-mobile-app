@@ -1,7 +1,7 @@
 <div class="video-card">
 
     <a href="./video-details.php" class="image-wrapper">
-        <img src="assets/images/thums/gallery/0<?php echo $i + 4 ?>.jpg" class="image">
+        <img src="https://app.islamicbookfairkw.com/storage/books/vnVryPL6LS8PTlYQMWRwwgynsZP1u9WJnoTFDU9f.png" class="image">
         <div class="overlay">
             <div class="icon-wrapper">
                 <i class="fa-solid fa-play"></i>

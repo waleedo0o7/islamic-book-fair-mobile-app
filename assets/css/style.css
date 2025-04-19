@@ -10093,9 +10093,9 @@ a:hover {
 
 .btn {
   padding: 0;
-  height: 45px;
+  height: 40px;
   border-radius: var(--border-radius);
-  min-width: 100px;
+  min-width: 90px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -10412,6 +10412,7 @@ img {
   background-color: var(--color-primary);
   border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
   padding-top: 30px !important;
+  min-height: 117px;
 }
 .publisher-card .text-wrapper .title {
   font-size: 22px;
@@ -10452,8 +10453,8 @@ img {
   align-items: center;
 }
 .auther-card img.auther-image {
-  height: 300px;
-  width: 300px;
+  height: 190px;
+  width: 190px;
   object-fit: cover;
   display: block;
   border-radius: 500px;
@@ -10465,11 +10466,17 @@ img {
   width: 100%;
   text-align: center;
   padding-top: 10px;
-  border-radius: 500px;
+  border-radius: 10px;
+  height: 60px;
 }
 .auther-card .text-wrapper .title {
   font-size: 22px;
   margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .auther-card .text-wrapper .text {
   color: #000;
@@ -11052,7 +11059,7 @@ ul.custom-list li ul {
 }
 
 .headline {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 #intro-wrapper {
@@ -11084,7 +11091,7 @@ ul.custom-list li ul {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(180deg, rgb(211, 197, 235) 0%, rgb(247, 243, 234) 100%);
+  background: linear-gradient(180deg, rgb(211, 197, 235) 0%, rgb(245, 246, 248) 100%);
 }
 #intro-wrapper section#intro .intro-content-wrapper .top {
   display: flex;
@@ -11316,13 +11323,16 @@ ul.custom-list li ul {
 }
 
 #activities {
-  padding: 60px 0;
+  padding: 30px 0 20px 0;
   background-color: #FFF;
+}
+#activities .swiper-slider-wrapper {
+  margin-bottom: 45px;
 }
 
 #publishers {
   background-image: url(../images/thums/publishers/publishers-bg.jpeg);
-  padding: 60px 0;
+  padding: 30px 0;
   position: relative;
 }
 #publishers * {
@@ -11331,7 +11341,7 @@ ul.custom-list li ul {
 
 #books {
   background-color: var(--background-gray);
-  padding: 60px 0;
+  padding: 30px 0;
 }
 #books .swiper-with-bottom-center-arrows {
   padding-bottom: 50px;
@@ -11341,28 +11351,28 @@ ul.custom-list li ul {
 }
 
 #authers {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: #FFF;
 }
 
 #quotes {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: var(--background-gray);
 }
 
 #statistics {
   background-color: var(--background-gray);
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 #infographic {
   background-color: #fff;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 #reels {
   background-color: var(--background-gray);
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .gallery-images-wrapper .image {
@@ -11543,11 +11553,11 @@ ul.custom-list li ul {
 }
 .video-card.card-sm .image {
   height: 200px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .video-card.card-reels .image {
-  height: 300px;
-  object-fit: cover;
+  height: 240px;
+  object-fit: fill;
 }
 .video-card .image-wrapper {
   position: relative;
@@ -11557,9 +11567,9 @@ ul.custom-list li ul {
   margin-bottom: 5px;
 }
 .video-card .image {
-  height: 280px;
+  height: 210px;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .video-card .title {
   font-size: 20px;
@@ -11604,7 +11614,7 @@ ul.custom-list li ul {
 }
 .quote-card img.image {
   width: 100%;
-  height: 213px;
+  height: 360px;
   border-radius: 15px;
   margin-bottom: 10px;
 }

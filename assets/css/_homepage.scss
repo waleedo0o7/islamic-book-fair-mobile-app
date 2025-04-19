@@ -1,5 +1,5 @@
 .headline {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #intro-wrapper {
@@ -18,14 +18,14 @@
         position: relative;
         background: rgb(205, 205, 205);
         width: 100%;
-        height: 100%; 
+        height: 100%;
 
         .container-start-padding {
             padding: 0;
 
         }
 
-        .intro-content-wrapper { 
+        .intro-content-wrapper {
             padding: 25px;
             position: relative;
             z-index: 2;
@@ -35,8 +35,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            background: linear-gradient(180deg, rgba(211, 197, 235, 1) 0%, rgba(247, 243, 234, 1) 100%);
-
+            background: linear-gradient(180deg, rgb(211, 197, 235) 0%, rgb(245 246 248) 100%);
 
             .top {
                 display: flex;
@@ -101,7 +100,7 @@
                             @media all and (max-width : 992px) {
                                 width: 25vw;
                             }
-                            
+
                             @media all and (max-width : 650px) {
                                 width: 50vw;
                             }
@@ -148,28 +147,28 @@
                             justify-content: center;
                             align-items: center;
                             gap: 15px;
-    
-    
+
+
                             .sponsor-logo-1 {
                                 height: 11vh;
- 
+
                                 @media all and (max-width : 650px) {
                                     height: 15vw;
                                 }
 
                             }
-    
+
                             .sponsor-logo-2 {
                                 height: 11vh;
- 
+
                                 @media all and (max-width : 650px) {
                                     height: 15vw;
                                 }
 
                             }
-    
+
                         }
-    
+
                     }
 
 
@@ -227,7 +226,7 @@
                 }
 
             }
- 
+
 
         }
 
@@ -319,13 +318,17 @@
 }
 
 #activities {
-    padding: 60px 0;
+    padding: 30px 0 20px 0;
     background-color: #FFF;
+
+    .swiper-slider-wrapper {
+        margin-bottom: 45px;
+    }
 }
 
 #publishers {
     background-image: url(../images/thums/publishers/publishers-bg.jpeg);
-    padding: 60px 0;
+    padding: 30px 0;
     position: relative;
 
     &:after {
@@ -339,7 +342,7 @@
 
 #books {
     background-color: var(--background-gray);
-    padding: 60px 0;
+    padding: 30px 0;
 
     .swiper-with-bottom-center-arrows {
         padding-bottom: 50px;
@@ -352,29 +355,29 @@
 }
 
 #authers {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: #FFF;
 }
 
 #quotes {
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: var(--background-gray);
 }
 
 #statistics {
     background-color: var(--background-gray);
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 #infographic {
     background-color: #fff;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 
 #reels {
     background-color: var(--background-gray);
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 
@@ -606,14 +609,14 @@
     &.card-sm {
         .image {
             height: 200px;
-            object-fit: cover;
+            object-fit: fill;
         }
     }
 
     &.card-reels {
         .image {
-            height: 300px;
-            object-fit: cover;
+            height: 240px;
+            object-fit: fill;
         }
     }
 
@@ -626,9 +629,9 @@
     }
 
     .image {
-        height: 280px;
+        height: 210px;
         width: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .title {
@@ -683,7 +686,7 @@
 
     img.image {
         width: 100%;
-        height: 213px;
+        height: 360px;
         border-radius: 15px;
         margin-bottom: 10px;
     }
@@ -703,7 +706,7 @@
 
 .infographic-card {
     display: block;
-    position: relative; 
+    position: relative;
     box-shadow: var(--base-box-shadow);
     width: 100%;
     overflow: hidden;
@@ -729,12 +732,10 @@
 
 }
 
-.video-js {
-    .vjs-big-play-button {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #video-item {

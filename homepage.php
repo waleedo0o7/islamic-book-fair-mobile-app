@@ -100,35 +100,32 @@
 
         </div>
 
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="https://app.islamicbookfairkw.com/compitation">
+                            <img src="https://app.islamicbookfairkw.com/storage/imgs/pESi6zBT2S209xanRAB60j4oPz0NiVX3gY9fl9f2.jpg" style="max-height: 18rem;">
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
 
         <section id="activities">
 
             <div class="container">
 
-                <div class="headline-wrapper mb-5">
-
+                <div class="headline-wrapper mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h1 class="headline"> الأنشطة والفعاليات </h1>
                         <a href="#" class="btn btn-outline-primary"> عرض الكل </a>
                     </div>
-
-                    <div class="row">
-
-
-                        <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
-
-                            <div class="arrows-wrapper custom-arrow w-100px">
-                                <div class="activities-swiper-button-prev swiper-button-prev">
-                                    <img src="assets/images/arrow-left.svg">
-                                </div>
-                                <div class="activities-swiper-button-next swiper-button-next">
-                                    <img src="assets/images/arrow-right.svg">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div> <!-- headline-wrapper -->
 
 
@@ -151,6 +148,18 @@
 
                 </div><!-- swiper-slider-wrapper -->
 
+                <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                        <div class="arrows-wrapper custom-arrow w-100px">
+                            <div class="activities-swiper-button-prev swiper-button-prev">
+                                <img src="assets/images/arrow-left.svg">
+                            </div>
+                            <div class="activities-swiper-button-next swiper-button-next">
+                                <img src="assets/images/arrow-right.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -160,7 +169,7 @@
 
             <div class="container">
 
-                <div class="headline-wrapper mb-5">
+                <div class="headline-wrapper mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h1 class="headline color-white"> دور النشر </h1>
                         <a href="#" class="btn btn-outline-light"> عرض الكل </a>
@@ -211,7 +220,7 @@
 
             <div class="container">
 
-                <div class="headline-wrapper mb-5">
+                <div class="headline-wrapper mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h1 class="headline"> الكتب </h1>
                         <a href="#" class="btn btn-outline-primary"> عرض الكل </a>
@@ -257,7 +266,7 @@
 
             <div class="container">
 
-                <div class="headline-wrapper mb-5">
+                <div class="headline-wrapper mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h1 class="headline"> المؤلفين </h1>
                         <a href="#" class="btn btn-outline-primary"> عرض الكل </a>
@@ -301,7 +310,7 @@
 
             <div class="container">
 
-                <div class="headline-wrapper mb-5">
+                <div class="headline-wrapper mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h1 class="headline"> روائع المقولات </h1>
                         <a href="#" class="btn btn-outline-primary"> عرض الكل </a>
@@ -345,7 +354,7 @@
 
             <div class="container">
 
-                <div class="headline-wrapper mb-5">
+                <div class="headline-wrapper mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h1 class="headline"> انفوجراف </h1>
                         <a href="#" class="btn btn-outline-primary"> عرض الكل </a>
@@ -389,7 +398,7 @@
 
             <div class="container">
 
-                <div class="headline-wrapper mb-5">
+                <div class="headline-wrapper mb-4">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h1 class="headline"> ريلزات توعوية </h1>
                         <a href="#" class="btn btn-outline-primary"> عرض الكل </a>
@@ -429,7 +438,7 @@
 
         </section><!-- reels -->
 
- 
+
         <section id="exhibition-guide">
             <div class="exhibition-guide-wrapper text-center">
 
@@ -456,7 +465,7 @@
 
         </section><!-- exhibition-guide -->
 
- 
+
         <section id="sponsors">
 
             <div class="container">

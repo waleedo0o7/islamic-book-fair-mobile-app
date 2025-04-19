@@ -85,7 +85,7 @@
 
             <div class="row mb-4">
                 <?php foreach (range(0, 7) as $i) { ?>
-                    <div class="col-6 col-md-3 mb-5">
+                    <div class="col-6 col-md-3 mb-4">
                         <?php include 'shared-html/auther-card.php' ?>
                     </div>
                 <?php } ?>

@@ -250,6 +250,7 @@ img {
         background-color: var(--color-primary);
         border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
         padding-top: 30px !important;
+        min-height: 117px;
 
         .title {
             font-size: 22px;
@@ -303,8 +304,8 @@ img {
     align-items: center;
 
     img.auther-image {
-        height: 300px;
-        width: 300px;
+        height: 190px;
+        width: 190px;
         object-fit: cover;
         display: block;
         border-radius: 500px;
@@ -317,11 +318,17 @@ img {
         width: 100%;
         text-align: center;
         padding-top: 10px;
-        border-radius: 500px;
+        border-radius: 10px;
+        height: 60px;
 
         .title {
             font-size: 22px;
             margin-bottom: 5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         .text {

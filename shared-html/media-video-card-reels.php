@@ -1,7 +1,7 @@
 <div class="video-card card-reels">
 
     <a href="./video-reels-details.php" class="image-wrapper">
-        <img src="assets/images/thums/gallery/0<?php echo $i + 4 ?>.jpg" class="image">
+        <img src="https://app.islamicbookfairkw.com/storage/books/uZ9Sqfo9Bjzx7j99bDAnhFp4BQGVcR8yaZeIUMhu.png" class="image">
         <div class="overlay">
             <div class="icon-wrapper">
                 <i class="fa-solid fa-play"></i>
