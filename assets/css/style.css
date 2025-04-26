@@ -12014,6 +12014,15 @@ ul.custom-list li ul {
   color: #FFF;
 }
 
+#live-frame .live-wrapper #live-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 86.5%;
+  height: 66%;
+}
+
 @media (min-width: 1800px) {
   .container-start-padding {
     padding-inline-start: 14%;

@@ -100,6 +100,34 @@
 
         </div>
 
+        <section id="live-frame" class="mb-5">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-9 m-auto">
+
+                        <div class="live-wrapper">
+
+                            <img src="assets/images/live-frame.png" class="live-image">
+
+                            <iframe
+                                id="live-video"
+                                src="https://www.youtube.com/embed/qGQxSlE4Dlw"
+                                title="YouTube Live Stream"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="container">
                 <div class="row">

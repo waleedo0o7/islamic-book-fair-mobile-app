@@ -500,6 +500,21 @@ $grid-gutter-width: 15px;
     }
 }
 
+
+#live-frame {
+    .live-wrapper {
+        #live-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 86.5%;
+            height: 66%;
+        }
+    }
+}
+
+
 @import "media";
 @import "mobile-menu";
 @import "rtl";
